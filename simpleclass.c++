@@ -27,28 +27,73 @@
 
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// class Car
+// {
+// private:
+//     string Brand;
+//     int Year;
+
+// public:
+
+//     void input()
+//     {
+//      cout<<"Enter Brand Name: ";
+//      cin>>Brand;
+
+//      cout<<"Enter Year: ";
+//      cin>>Year;
+//     }
+//     void display()
+//     {
+//         cout<<"     Car Details     "<<endl;
+//         cout << "Brand: " << Brand << endl;
+//         cout << "Year:" <<Year << endl;
+//     }
+// };
+// int main()
+// {
+//     Car s1;
+
+//    s1.input();
+//    s1.display();
+//    return 0;
+// }
+
+
+
+
+#include<iostream>
 using namespace std;
 
-class Car
-{
-public:
-    string Brand;
-    int Year;
+class calculator{
 
-    void display()
-    {
-        cout << "Brand: " << Brand << endl;
-        cout << "Year:" <<Year << endl;
-    }
+private:
+int a,b;
+
+public:
+void input()
+{
+    cout<<"Enter Number a and b: ";
+    cin>>a;
+    cin>>b;
+}
+
+void display()
+{
+    cout<< a+b<<endl;
+    cout<< a*b<<endl;
+}
 };
+
 int main()
 {
-    Car s1;
+calculator c;
 
-    s1.Brand = "BMW";
-    s1.Year = 2;
+c.input();
+c.display();
 
-   s1.display();
-   return 0;
+return 0;
 }
