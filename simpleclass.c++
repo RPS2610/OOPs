@@ -65,35 +65,35 @@
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class calculator{
+// class calculator{
 
-private:
-int a,b;
+// private:
+// int a,b;
 
-public:
-void input()
-{
-    cout<<"Enter Number a and b: ";
-    cin>>a;
-    cin>>b;
-}
+// public:
+// void input()
+// {
+//     cout<<"Enter Number a and b: ";
+//     cin>>a;
+//     cin>>b;
+// }
 
-void display()
-{
-    cout<< a+b<<endl;
-    cout<< a*b<<endl;
-}
-};
+// void display()
+// {
+//     cout<< a+b<<endl;
+//     cout<< a*b<<endl;
+// }
+// };
 
-int main()
-{
-calculator c;
+// int main()
+// {
+// calculator c;
 
-c.input();
-c.display();
+// c.input();
+// c.display();
 
-return 0;
-}
+// return 0;
+// }
