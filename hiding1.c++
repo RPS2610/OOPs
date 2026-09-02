@@ -1,54 +1,57 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-class BankAccount
-{
+class BankAccount {
 private:
     double balance;
 
 public:
-    // Constructor
-    BankAccount(double initialBalance)
-    {
+    BankAccount(double initialBalance) {
         balance = initialBalance;
     }
 
-    // Deposit
-    void deposit(double amount)
-    {
-        balance += amount;
-        cout << "Deposited Amount: " << amount << endl;
+    void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            cout << "Amount deposited successfully." << endl;
+        } else {
+            cout << "Invalid deposit amount." << endl;
+        }
     }
 
-    // Withdraw
-    void withdraw(double amount)
-    {
-        if (amount <= balance)
-        {
+    void withdraw(double amount) {
+        if (amount <= 0) {
+            cout << "Invalid withdrawal amount." << endl;
+        }
+        else if (amount > balance) {
+            cout << "Insufficient balance." << endl;
+        }
+        else {
             balance -= amount;
-            cout << "Withdrawn Amount: " << amount << endl;
-        }
-        else
-        {
-            cout << "Insufficient Balance!" << endl;
+            cout << "Amount withdrawn successfully." << endl;
         }
     }
 
-    // Display Balance
-    void display()
-    {
+    void displayBalance() {
         cout << "Current Balance: " << balance << endl;
     }
 };
 
-int main()
-{
-    BankAccount bank(5000);
-    bank.display();
-    bank.deposit(1000);
-    bank.display();
-    bank.withdraw(2000);
-    bank.display();
+int main() {
+    BankAccount account(10000);
+
+    account.displayBalance();
+
+    account.deposit(5000);
+    account.displayBalance();
+
+    account.withdraw(3000);
+    account.displayBalance();
+     
+  
+
+
+
 
     return 0;
 }

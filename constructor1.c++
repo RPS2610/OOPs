@@ -39,9 +39,10 @@ public:
 
 int main()
 {
-    BankAccount bank(5000);  // Constructor called
+    BankAccount bank(5000);  
 
     bank.deposit(1000);
+
     bank.withdraw(2000);
 
     bank.display();
