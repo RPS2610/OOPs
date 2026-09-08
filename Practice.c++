@@ -51,39 +51,43 @@
 // #include <iostream>
 // using namespace std;
 
-// class Student {
+// class Employee {
 // private:
-//     int marks;
+//     int id;
+//     float salary;
 
 // public:
 //     // Parameterized constructor
-//     Student(int m) {
-//         marks = m;
+//     Employee(int i, float s) {
+//         id = i;
+//         salary = s;
 //     }
 
 //     // Copy constructor
-//     Student(const Student &s) {
-//         marks = s.marks;
+//     Employee(const Employee &e) {
+//         id = e.id;
+//         salary = e.salary;
 //     }
 
-//     // Function to display marks
+//     // Display function
 //     void display() {
-//         cout << "Marks: " << marks << endl;
+//         cout << "Employee ID: " << id << endl;
+//         cout << "Salary: " << salary << endl;
 //     }
 // };
 
 // int main() {
-//     // First student object
-//     Student student1(85);
+//     // First object using parameterized constructor
+//     Employee emp1(101, 50000);
 
-//     // Copy student1's marks into student2
-//     Student student2 = student1;
+//     // Second object using copy constructor
+//     Employee emp2(emp1);
 
-//     cout << "Student 1: ";
-//     student1.display();
+//     cout << "First Employee:" << endl;
+//     emp1.display();
 
-//     cout<<"student 2: ";
-//     student2.display();
+//     cout << "\nSecond Employee:" << endl;
+//     emp2.display();
 
 //     return 0;
 // }
