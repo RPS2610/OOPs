@@ -111,50 +111,50 @@
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class Node
-{
-public:
-    int data;
-    Node *next;
-};
+// class Node
+// {
+// public:
+//     int data;
+//     Node *next;
+// };
 
-int main()
-{
-    Node *head, *temp, *newNode;
+// int main()
+// {
+//     Node *head, *temp, *newNode;
 
-    Node n1, n2;
+//     Node n1, n2;
 
-    n1.data = 10;
-    n2.data = 20;
+//     n1.data = 10;
+//     n2.data = 20;
 
-    n1.next = &n2;
-    n2.next = NULL;
+//     n1.next = &n2;
+//     n2.next = NULL;
 
-    head = &n1;
+//     head = &n1;
 
-    newNode = new Node;
-    newNode->data = 30;
-    newNode->next = NULL;
+//     newNode = new Node;
+//     newNode->data = 30;
+//     newNode->next = NULL;
 
-    temp = head;
+//     temp = head;
 
-    while(temp->next != NULL)
-    {
-        temp = temp->next;
-    }
+//     while(temp->next != NULL)
+//     {
+//         temp = temp->next;
+//     }
 
-    temp->next = newNode;
+//     temp->next = newNode;
 
-    temp = head;
+//     temp = head;
 
-    while(temp != NULL)
-    {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
+//     while(temp != NULL)
+//     {
+//         cout << temp->data << " ";
+//         temp = temp->next;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
